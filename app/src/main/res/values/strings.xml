@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Practical4</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_to_the_amazing_weather_app">Welcome to the amazing Weather App</string>
+    <string name="display_todays_weather">Display todays weather</string>
+    <string name="display_tommorows_weather">display tommorows weather</string>
+    <string name="tommorows_weather">Tommorows Weather</string>
+    <string name="weather_app">Weather App</string>
+    <string name="tommorow">Tommorow</string>
+    <string name="today">Today</string>
+</resources>
