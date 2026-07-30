@@ -31,14 +31,14 @@ class FragmentWeatherTomorrow : Fragment() {
 
         val viewModel = (requireActivity() as MainActivity).viewModel
 
-        val tomorrow = LocalDate.now()
+        val today = LocalDate.now()
+        val tomorrow = today.plusDays(1)
 
+        textView5.text = today.toString()
 
-        textView5.text = tomorrow.toString()
-
-        viewModel.getForecast("Pietermaritzburg", "units")
-        viewModel.forecast.observe(viewLifecycleOwner) {
-
+        viewModel.getForecast("This is a description","temp", "2026-07-30 15:00:00")
+        viewModel.forecast.observe(viewLifecycleOwner){
+            textView5.text = viewModel.forecast.value?.list[0]?.main?.temp.toString()
 
 
         }

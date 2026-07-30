@@ -39,7 +39,7 @@ class FragmentWeatherToday : Fragment() {
 
         textView3.text = today.toString()
 
-
+        viewModel.getForecast("This is a description","temp", "2026-07-30 15:00:00")
         viewModel.forecast.observe(viewLifecycleOwner){
             textView3.text = viewModel.forecast.value?.list[0]?.main?.temp.toString()
         }
